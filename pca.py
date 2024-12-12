@@ -52,7 +52,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f'Accuracy: {accuracy * 100:.2f}%')
 
 plt.figure(figsize=(8, 6))
-plt.scatter(X_pca[:, 1], X_pca[:, 1], edgecolor='k', s=50)
+plt.scatter(X_pca[:, 2], X_pca[:, 1], edgecolor='k', s=50) #change variables here
 plt.title('PCA of Planet/Moon Dataset')
 plt.xlabel('Principal Component 1')
 plt.ylabel('Principal Component 2')
